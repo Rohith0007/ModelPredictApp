@@ -1,6 +1,8 @@
 # Backend
     pip install -r requirements.txt
-    
+
+    python -m pip freeze > requirements.txt
+
     flake8 .
 
     python manage.py makemigrations
@@ -9,13 +11,13 @@
     python upload_json.py
 
     python manage.py runserver
-    
+
 ### Admin
-    python manage.py createsuperuser 
+    python manage.py createsuperuser
 
 
 # Frontend
-    npm install 
+    npm install
 
     npm install eslint prettier eslint-plugin-react eslint-config-prettier eslint-plugin-prettier --save-dev
 

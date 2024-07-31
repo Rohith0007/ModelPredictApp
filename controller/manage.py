@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    settings_module = 'ModelPredict.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'ModelPredict.settings'
+    settings_module = 'ModelPredict.deployment' if 'AZURE_EXTENSION_DIR' in os.environ else 'ModelPredict.settings'
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
     # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ModelPredict.settings')
     try:

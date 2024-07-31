@@ -38,10 +38,10 @@ CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.s
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": django-webapp-database,
-        "HOST": django-webapp-server.postgres.database.azure.com,
-        "USER": lmhgigcncb,
-        "PASSWORD": $Ko3yh87wprWoh3s,
+        "NAME": "django-webapp-database",
+        "HOST": "django-webapp-server.postgres.database.azure.com",
+        "USER": "lmhgigcncb",
+        "PASSWORD": "$Ko3yh87wprWoh3s"
     }
 }
 

@@ -3,7 +3,7 @@ from .settings import *
 from .settings import BASE_DIR
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+# CSRF_TRUSTED_ORIGINS = ['*']
 DEBUG = False
 SECRET_KEY = '(L.WJ}r^EGt%Jh2_^WQHXr,(Cuxf0@'
 

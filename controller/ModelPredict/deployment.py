@@ -5,7 +5,7 @@ from .settings import BASE_DIR
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['*']
 DEBUG = False
-SECRET_KEY = os.environ['MY_SECRET_KEY']
+SECRET_KEY = '(L.WJ}r^EGt%Jh2_^WQHXr,(Cuxf0@'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -38,10 +38,10 @@ CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.s
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": CONNECTION_STR['dbname'],
-        "HOST": CONNECTION_STR['host'],
-        "USER": CONNECTION_STR['user'],
-        "PASSWORD": CONNECTION_STR['password'],
+        "NAME": django-webapp-database,
+        "HOST": django-webapp-server.postgres.database.azure.com,
+        "USER": lmhgigcncb,
+        "PASSWORD": $Ko3yh87wprWoh3s,
     }
 }
 

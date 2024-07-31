@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
-settings_module = 'ModelPredict.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'ModelPredic.settings'
-os.environ.setdefault('DJANGO_SETTINGS_MODUL', 'ModelPredict.settings')
+settings_module = 'ModelPredict.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'ModelPredict.settings'
+os.environ.setdefault('DJANGO_SETTINGS_MODUL', settings_module)
 
 application = get_wsgi_application()

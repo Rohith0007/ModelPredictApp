@@ -11,7 +11,7 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-settings_module = 'ModelPredict.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'ModelPredict.settings'
+settings_module = 'ModelPredict.deployment' if 'AZURE_EXTENSION_DIR' in os.environ else 'ModelPredict.settings'
 os.environ.setdefault('DJANGO_SETTINGS_MODUL', settings_module)
 
 application = get_asgi_application()

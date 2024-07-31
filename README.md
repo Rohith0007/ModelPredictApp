@@ -10,7 +10,6 @@
     python manage.py migrate
 
     python upload_json.py
-
     python manage.py runserver
 
 ### Admin

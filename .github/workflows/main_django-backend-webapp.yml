@@ -33,14 +33,6 @@ jobs:
           cd controller
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      - name: Run Backend Code
-        run: |
-          cd controller
-          printenv
-          python manage.py makemigrations
-          python manage.py migrate
-          python manage.py runserver
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
